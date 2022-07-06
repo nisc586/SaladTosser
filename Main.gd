@@ -18,21 +18,6 @@ func _process(_delta):
 func _on_IngredientSpawnTimer_timeout():
 	if not Input.is_action_pressed("click"):
 		return
-
-#	var spawn_position = get_viewport().get_mouse_position()
-#	var offset = 100
-#	var ingredient = salad.instance()
-#	ingredient.position = spawn_position
-#	add_child(ingredient)
-#
-#	ingredient = salad.instance()
-#	ingredient.position = spawn_position + Vector2.LEFT * offset
-#	add_child(ingredient)
-#
-#	ingredient = salad.instance()
-#	ingredient.position = spawn_position + Vector2.RIGHT * offset
-#	add_child(ingredient)
-	
 	
 	var nossle = $PlayerHand/LineNossle
 	for child in nossle.get_children():
